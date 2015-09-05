@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="volunteerVerify">
+<head>
+    <title>Verify Volunteer - Home</title>
+
+    <!--Library CSS-->
+    <link href="content/superhero.css" rel="stylesheet" />
+
+    <!--Custom CSS-->
+    <link href="content/styles.css" rel="stylesheet" />
+
+    <!--Library Scripts-->
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-resource.js"></script>
+    <script src="scripts/angular-mocks.js"></script>
+    <script src="scripts/angular-ui-router.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular-ui-mask.js"></script>
+    <script src="scripts/angular-ui-bootstrap.js"></script>
+
+    <!--Application Scripts-->
+    <script src="app/app.js"></script>
+
+    <!--Volunteer Controllers-->
+    <script src="app/volunteers/volunteerListCtrl.js"></script>
+    <script src="app/volunteers/volunteerDetailCtrl.js"></script>
+    <script src="app/volunteers/volunteerEditCtrl.js"></script>
+    <script src="app/volunteers/volunteerEditDetailsCtrl.js"></script>
+
+    <!--Services-->
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/volunteerResource.js"></script>
+    <script src="common/services/volunteerResourceMock.js"></script>
+    <script src="common/services/testResource.js"></script>
+
+    <!--Custom Directives-->
+    <script src="app/volunteers/volunteerInfoDir.js"></script>
+    <script src="app/volunteers/volunteerVerificationsDir.js"></script>
+    <script src="app/volunteers/volunteerTableDir.js"></script>
+    <script src="app/volunteers/volunteerEditVerificationDir.js"></script>
+    <script src="app/volunteers/volunteerSaveEditsDir.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a data-ui-sref="home" class="navbar-brand" href="#">Volunteer Verify</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-ui-sref="volunteerList">Volunteers<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Verifications</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Veiws go in this div-->
+    <div class="container">
+        <div data-ui-view></div>
+    </div>
+</body>
+</html>

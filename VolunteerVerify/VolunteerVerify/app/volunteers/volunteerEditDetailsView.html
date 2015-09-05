@@ -1,0 +1,56 @@
+﻿<form name="volunteerForm" class="form-horizontal">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+            <label for="firstName" class="col-sm-2 control-label">First Name</label>
+            <div class="col-sm-5">
+                <input id="firstName" class="form-control" type="text" ng-model="editVm.volunteer.firstName" placeholder="First Name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="middleInitial" class="col-sm-2 control-label">Middle Initial</label>
+            <div class="col-sm-5">
+                <input id="middleInitial" class="form-control" type="text" ng-model="editVm.volunteer.middleInit" placeholder="Middle Initial" ng-maxlength="1" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-sm-2 control-label">Last Name</label>
+            <div class="col-sm-5">
+                <input id="lastName" class="form-control" type="text" ng-model="editVm.volunteer.lastName" placeholder="Last Name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-5">
+                <input id="email" class="form-control" type="email" ng-model="editVm.volunteer.email" placeholder="someone@email.com" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="col-sm-2 control-label">Phone</label>
+            <div class="col-sm-5">
+                <input id="phone" class="form-control" type="text" ng-model="editVm.volunteer.phone" data-ui-mask="(999) 999-9999" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dob" class="col-sm-2 control-label">Date of Birth</label>
+            <div class="col-sm-5">
+                <input id="dob"
+                       class="form-control"
+                       type="text"
+                       ng-model="editVm.volunteer.DOB"
+                       ng-readonly="true"
+                       ng-click="editDetailsVm.Open($event)"
+                       data-datepicker-popup="MMM dd, yyyy"
+                       placeholder="MMM dd, yyyy"
+                       data-is-open="editDetailsVm.Opened" />
+            </div>
+        </div>
+        <div class=" form-group">
+            <label for="isActive" class="col-sm-2 control-label">Is Active</label>
+            <div class="col-sm-5">
+                <input id="isActive" class="form-control align-checkbox" type="checkbox" ng-model="editVm.volunteer.isActive" />
+            </div>
+        </div>
+        <vv-volunteer-save-edits submit="editVm"></vv-volunteer-save-edits>
+    </fieldset>
+</form>

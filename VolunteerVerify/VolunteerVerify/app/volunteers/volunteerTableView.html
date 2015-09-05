@@ -1,0 +1,24 @@
+﻿<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th class="hide-on-small">Email</th>
+            <th class="hide-on-small">Phone</th>
+            <th class="hide-on-small">Date of Birth</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="vol in volunteers">
+            <td title="view the details for this volunteer"><a data-ui-sref="volunteerDetail({volunteerId: vol.volunteerId})">{{vol.firstName + " " + (vol.middleInitial? vol.middleInitial : "") + " " + vol.lastName}}</a></td>
+            <td><span class="label label-{{vol.label}}">{{vol.status}}</span></td>
+            <td class="hide-on-small">{{vol.email}}</td>
+            <td class="hide-on-small">{{vol.phone}}</td>
+            <td class="hide-on-small">{{vol.dob | date: 'mediumDate'}}</td>
+            <td><a data-ui-sref="volunteerDetail({volunteerId: vol.volunteerId})"><i class="glyphicon glyphicon-eye-open" title="view the details for this volunteer"></i></a></td>
+            <td><i class="glyphicon glyphicon-remove icon-red make-pointer" title="delete this volunteer"></i></td>
+        </tr>
+    </tbody>
+</table>

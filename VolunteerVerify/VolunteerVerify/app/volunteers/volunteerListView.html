@@ -1,0 +1,21 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Volunteers</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row extra-padding">
+            <div class="col-sm-5 col-xs-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="searchTerm" placeholder="Find volunteer...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" ng-click="vm.testSearch(searchTerm)">Search</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-7 col-xs-12">
+                <a class="btn btn-primary margin-on-xs pull-right" data-ui-sref="volunteerEdit.details({volunteerId: 0})"><i class="glyphicon glyphicon-plus"></i> Add Volunteer</a>
+            </div>
+        </div>
+        <vv-volunteer-table volunteers="vm.volunteers"></vv-volunteer-table>
+    </div>
+</div>

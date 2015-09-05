@@ -1,0 +1,23 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Volunteer Information</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-sm-5">
+            <h4>Personal Information</h4>
+            <vv-volunteer-info volunteer="vm.volunteer"></vv-volunteer-info> 
+        </div>
+        <div class="col-sm-5">
+            <vv-volunteer-verifications verifications="vm.volunteer.verifications"></vv-volunteer-verifications>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-default std-btn-size" data-ui-sref="volunteerList">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Back
+        </a>
+        <a class="btn btn-primary std-btn-size" data-ui-sref="volunteerEdit.details({volunteerId: vm.volunteer.volunteerId})">
+            Edit
+        </a>
+    </div>
+</div>

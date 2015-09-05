@@ -1,0 +1,11 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">{{editVm.volunteer.volunteerId != 0? editVm.volunteer.firstName + " " + editVm.volunteer.lastName : "New Volunteer"}}</div>
+    <div class="panel-body">
+        <div class="wizard">
+            <a data-ui-sref=".details" data-ui-sref-active="active">Details</a>
+            <a data-ui-sref=".verifications" data-ui-sref-active="active">Verifications</a>
+        </div>
+
+        <div data-ui-view></div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿body {
+}
+
+.icon-red{
+    color: red;
+}
+
+.align-checkbox{
+    margin-top: 12px !important; 
+}
+
+.std-btn-size{
+    width: 90px;
+}
+
+.extra-padding{
+    padding: 10px 0px;
+}
+
+.wizard a {
+    background: #efefef;
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 150px;
+    outline: none;
+    padding: 10px 40px 10px;
+    position:relative;
+    text-decoration: none;
+}
+
+.wizard .active{
+    background: #2196f3;
+    color: #fff;
+}
+
+.make-pointer:hover{
+    cursor:pointer;
+}
+
+@media (max-width: 767px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  .margin-on-xs{
+      margin-top: 10px;
+  }
+}

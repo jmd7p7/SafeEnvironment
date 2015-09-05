@@ -1,0 +1,6 @@
+C:\Users\Jonathan\Documents\DEV\SafeEnvironment\VolunteerVerify\VolunteerVerify\bin\VolunteerVerify.dll.config
+C:\Users\Jonathan\Documents\DEV\SafeEnvironment\VolunteerVerify\VolunteerVerify\bin\VolunteerVerify.dll
+C:\Users\Jonathan\Documents\DEV\SafeEnvironment\VolunteerVerify\VolunteerVerify\bin\VolunteerVerify.pdb
+C:\Users\Jonathan\Documents\DEV\SafeEnvironment\VolunteerVerify\VolunteerVerify\obj\Debug\VolunteerVerify.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\DEV\SafeEnvironment\VolunteerVerify\VolunteerVerify\obj\Debug\VolunteerVerify.dll
+C:\Users\Jonathan\Documents\DEV\SafeEnvironment\VolunteerVerify\VolunteerVerify\obj\Debug\VolunteerVerify.pdb

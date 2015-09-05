@@ -1,0 +1,7 @@
+﻿<form name="volunteerVerificationForm" class="form-horizontal">
+    <fieldset>
+        <legend>Verifications</legend>
+        <vv-edit-volunteer-verification ng-repeat="verification in editVm.volunteer.verifications"></vv-edit-volunteer-verification>
+    </fieldset>
+    <vv-volunteer-save-edits submit="editVm"></vv-volunteer-save-edits>
+</form>
